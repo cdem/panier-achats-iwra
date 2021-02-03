@@ -1,3 +1,3 @@
-# Petite présentation de l'application
+# Prototype de panier d'achats React
 
-Un court texte présentant votre site Web.
+Cet exemple va nous servir et accompagner dans notre apprentissage des bases du cadriciels React (+JSX, +ES6+).
