@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/panier-achats-iwra/static/css/main.9e721a13.chunk.css",
+    "main.js": "/panier-achats-iwra/static/js/main.80dd6a53.chunk.js",
+    "main.js.map": "/panier-achats-iwra/static/js/main.80dd6a53.chunk.js.map",
+    "runtime-main.js": "/panier-achats-iwra/static/js/runtime-main.66e612f1.js",
+    "runtime-main.js.map": "/panier-achats-iwra/static/js/runtime-main.66e612f1.js.map",
+    "static/js/2.93eb4e8d.chunk.js": "/panier-achats-iwra/static/js/2.93eb4e8d.chunk.js",
+    "static/js/2.93eb4e8d.chunk.js.map": "/panier-achats-iwra/static/js/2.93eb4e8d.chunk.js.map",
+    "index.html": "/panier-achats-iwra/index.html",
+    "static/css/main.9e721a13.chunk.css.map": "/panier-achats-iwra/static/css/main.9e721a13.chunk.css.map",
+    "static/js/2.93eb4e8d.chunk.js.LICENSE.txt": "/panier-achats-iwra/static/js/2.93eb4e8d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66e612f1.js",
+    "static/js/2.93eb4e8d.chunk.js",
+    "static/css/main.9e721a13.chunk.css",
+    "static/js/main.80dd6a53.chunk.js"
+  ]
+}
