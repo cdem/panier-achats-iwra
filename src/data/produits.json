@@ -1,0 +1,22 @@
+[
+  {
+    "id": "prd0005",
+    "nom": "Un autre produit",
+    "prix": 250.95
+  },
+  {
+    "id": "prd0001",
+    "nom": "Chandail manche longue blanc",
+    "prix": 19.95
+  },
+  {
+    "id": "prd0002",
+    "nom": "Chandail à col rond",
+    "prix": 9.99
+  },
+  {
+    "id": "prd0003",
+    "nom": "T-Shirt vert",
+    "prix": 12.67
+  }
+]

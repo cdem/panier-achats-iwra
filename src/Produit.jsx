@@ -1,6 +1,7 @@
 import './Produit.css';
 
 export default function Produit(props) {
+  console.log("Le paramètre props dans Produit : ", props);
   return (
     <li>
       <img src={'images-produits/' + props.id + '.webp'} alt={props.nom}/>
