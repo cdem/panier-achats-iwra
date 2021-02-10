@@ -6,7 +6,7 @@
   },
   {
     "id": "prd0001",
-    "nom": "Chandail manche longue blanc",
+    "nom": "Chandail à manche longue gris pour femme",
     "prix": 19.95
   },
   {
@@ -17,6 +17,11 @@
   {
     "id": "prd0003",
     "nom": "T-Shirt vert",
+    "prix": 12.67
+  },
+  {
+    "id": "prd0004",
+    "nom": "T-Shirt rouge à manches longues",
     "prix": 12.67
   }
 ]
