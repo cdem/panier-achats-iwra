@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import './ConteneurGlobal.scss';
 import Entete from './Entete';
+import Accueil from './Accueil';
+import Contact from './Contact';
+import Apropos from './Apropos';
 import ListeProduits from './ListeProduits';
 import PiedDePage from './PiedDePage';
+import { Switch, Route } from 'react-router-dom';
 
 export default function ConteneurGlobal() {
   // Utiliser la gestion de l'état avec "useState"
@@ -12,7 +16,21 @@ export default function ConteneurGlobal() {
     <div className="ConteneurGlobal">
       <Entete etatPanier={etatPanier} />
       <section className="contenuPrincipal">
-        <ListeProduits etatPanier={etatPanier} />
+        <Switch>
+          <Route path="/" exact>
+            <Accueil/>
+          </Route>
+          <Route path="/nos-produits">
+            <ListeProduits etatPanier={etatPanier} />
+          </Route>
+          <Route path="/a-propos-de-nous">
+            <Apropos/>
+          </Route>
+          <Route path="/contactez-nous">
+            <Contact/>
+          </Route>
+        </Switch>
+        
       </section>
       <PiedDePage />
     </div>
