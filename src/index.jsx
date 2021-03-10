@@ -4,9 +4,11 @@ import './index.scss';
 import ConteneurGlobal from './ConteneurGlobal';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+const baseName = (window.location.hostname.search(/github\.io/i)!==-1) ? "/panier-achats-iwra" : "";
+
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={baseName}>
       <ConteneurGlobal />
     </Router>
   </React.StrictMode>,
