@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/panier-achats-iwra/static/css/main.6391fa12.chunk.css",
-    "main.js": "/panier-achats-iwra/static/js/main.f3586da1.chunk.js",
-    "main.js.map": "/panier-achats-iwra/static/js/main.f3586da1.chunk.js.map",
+    "main.js": "/panier-achats-iwra/static/js/main.abd154f0.chunk.js",
+    "main.js.map": "/panier-achats-iwra/static/js/main.abd154f0.chunk.js.map",
     "runtime-main.js": "/panier-achats-iwra/static/js/runtime-main.66e612f1.js",
     "runtime-main.js.map": "/panier-achats-iwra/static/js/runtime-main.66e612f1.js.map",
     "static/js/2.0124e50a.chunk.js": "/panier-achats-iwra/static/js/2.0124e50a.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.66e612f1.js",
     "static/js/2.0124e50a.chunk.js",
     "static/css/main.6391fa12.chunk.css",
-    "static/js/main.f3586da1.chunk.js"
+    "static/js/main.abd154f0.chunk.js"
   ]
 }
