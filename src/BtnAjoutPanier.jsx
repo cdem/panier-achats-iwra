@@ -1,11 +1,11 @@
 import { Badge } from '@material-ui/core';
 import './BtnAjoutPanier.scss';
 
-export default function BtnAjoutPanier(props) {
+export default function BtnAjoutPanier({onClick, qte, texte, classeCss}) {
   return (
-    <Badge badgeContent={props.qte} color="primary">    
-      <button className={'BtnAjoutPanier ' + props.classeCss} onClick={props.onClick}>
-        {props.texte}
+    <Badge badgeContent={qte} color="primary">    
+      <button className={'BtnAjoutPanier ' + classeCss} onClick={onClick}>
+        {texte}
       </button>
     </Badge>
   );

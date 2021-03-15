@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './ConteneurGlobal.scss';
 import Entete from './Entete';
 import Accueil from './Accueil';
@@ -9,19 +9,26 @@ import PiedDePage from './PiedDePage';
 import { Switch, Route } from 'react-router-dom';
 
 export default function ConteneurGlobal() {
-  // Vérifier s'il y a qqchose dans localStorage avec la clé 'panier-4pa'. 
-  let panier = {};
-  if(window.localStorage.getItem('panier-4pa')) {
-    panier = JSON.parse(window.localStorage.getItem('panier-4pa'));
-  }
+  // const [compteur, setCompteur] = useState(0);
   
   // Utiliser la gestion de l'état avec "useState"
-  // Utiliser "Lazy Initialization" (prochain cours)
-  const etatPanier = useState(panier);
+  // Utiliser "Lazy Initialization"
+  const etatPanier = useState(
+    () => window.localStorage.getItem('panier-4pa') ? JSON.parse(window.localStorage.getItem('panier-4pa')) : {}
+  );
+  const [panier] = etatPanier;
 
   // Sauvegarder le panier dans localStorage à chaque fois que l'état du panier est muté.
-  // Utiliser useEffect() (prochain cours)
-  window.localStorage.setItem('panier-4pa', JSON.stringify(etatPanier[0]));
+  // Utiliser le 'HOOK' useEffect()
+  // Voir la docu : https://reactjs.org/docs/hooks-intro.html
+  useEffect(
+    () => window.localStorage.setItem('panier-4pa', JSON.stringify(panier))
+    , [panier] 
+    // Tableau des dépendances : 
+        // 1) si cet argument est absent (pas de tableau) : DANGER : l'effet est exécuté chaque fois que le composant est raffraîchi
+        // 2) Si cet argument est un tableau vide ([]) : SAFE : l'effet est exécuté une seule fois, EXACTEMENT APRÈS que le composant a été affiché par React
+        // 3) Si ce tableau contient des variables : l'effet est exécuté à toutes les fois que l'une ou l'autre des variables du tableau est modifiée
+  );
 
   return (
     <div className="ConteneurGlobal">
@@ -32,6 +39,7 @@ export default function ConteneurGlobal() {
             <Accueil/>
           </Route>
           <Route path="/nos-produits">
+            {/* <button onClick={() => setCompteur(compteur + 1)}>Cliquez pour augmenter le compteur ({compteur})</button> */}
             <ListeProduits etatPanier={etatPanier} />
           </Route>
           <Route path="/a-propos-de-nous">
